@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<llsd>
+<map>
+    <key>package_description</key>
+    <map>
+      <key>copyright</key>
+      <string>Copyright various</string>
+      <key>description</key>
+      <string>Viewer fonts</string>
+      <key>license</key>
+      <string>Various open source</string>
+      <key>license_file</key>
+      <string>LICENSES/fonts.txt</string>
+      <key>name</key>
+      <string>viewer-fonts</string>
+      <key>platforms</key>
+      <map>
+        <key>common</key>
+        <map>
+          <key>build_directory</key>
+          <string>stage</string>
+          <key>configurations</key>
+          <map>
+            <key>Release</key>
+            <map>
+              <key>default</key>
+              <string>True</string>
+              <key>build</key>
+              <map>
+                <key>arguments</key>
+                <array>
+                  <string>../build-cmd.sh</string>
+                </array>
+                <key>command</key>
+                <string>bash</string>
+              </map>
+              <key>name</key>
+              <string>Release</string>
+            </map>
+          </map>
+          <key>manifest</key>
+          <array>
+            <string>fonts/*.ttf</string>
+            <string>LICENSES/*.txt</string>
+          </array>
+          <key>name</key>
+          <string>common</string>
+        </map>
+      </map>
+      <key>version_file</key>
+      <string>VERSION.txt</string>
+    </map>
+    <key>type</key>
+    <string>autobuild</string>
+    <key>version</key>
+    <string>1.3</string>
+  </map>
+</llsd>
