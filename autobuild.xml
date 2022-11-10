@@ -41,7 +41,7 @@
           <key>manifest</key>
           <array>
             <string>fonts/*.ttf</string>
-            <string>LICENSES/*.txt</string>
+            <string>LICENSES/*-license.txt</string>
           </array>
           <key>name</key>
           <string>common</string>

@@ -25,7 +25,9 @@ SRC_DIR="${TOP_DIR}/src"
 # load autobuild provided shell functions and variables
 source_environment_tempfile="$STAGING_DIR/source_environment.sh"
 "$autobuild" source_environment > "$source_environment_tempfile"
+set +x
 . "$source_environment_tempfile"
+set -x
 
 LICENSE_DIR="${STAGING_DIR}/LICENSES"
 test -d ${LICENSE_DIR} || mkdir ${LICENSE_DIR}
