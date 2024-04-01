@@ -33,7 +33,7 @@ LICENSE_DIR="${STAGING_DIR}/LICENSES"
 test -d ${LICENSE_DIR} || mkdir ${LICENSE_DIR}
 echo "See <FontName>-license.txt for each individual font's license" > "${LICENSE_DIR}/fonts.txt"
 
-fonts_version=1
+fonts_version="1.0.0"
 build=${AUTOBUILD_BUILD_ID:=0}
 echo "${fonts_version}.${build}" > "${STAGING_DIR}/VERSION.txt"
 
